@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from 'react';
+import Top from '../components/homepage/Top'
+import Body from '../components/homepage/Card';
 const Home = () => {
   return (
-    <div>Home</div>
-  )
+    <>
+      <Top/>
+      <Body />
+    </>
+  );
 }
 
 export default Home
