@@ -7,21 +7,34 @@ const Card = () => {
         Our Users Are Being Hired at the <br />
         World's Leading Companies.
       </h1>
-      <div className="grid grid-rows-1 md:grid-cols-2 gap-4">
-        <div className='grid grid-rows-2'>
-          <div className=" bg-slate-600 rounded-3xl justify-items-end">
+      <div className="grid grid-rows-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="grid  gap-4">
+          <div className="  rounded-3xl justify-items-end">
             <div className="w-[160px] h-[160px] float-right">
               <p className="flex items-center justify-center bg-[#51E2C2] font-bold rounded-3xl text-white text-9xl h-full">
                 1
               </p>
             </div>
           </div>
-          <div>
-            ezasdfsd
+          <div className="h-[314px] rounded-3xl bg-slate-200 ">
+            <div className="h-full mx-auto w-[90%] grid place-content-center">
+              <h1 className=" text-[24px] font-bold gray-600">
+                Pick a Template
+              </h1>
+              <p className="text-[22px] from-neutral-200">
+                Don't sabotage your job search before it has even <br />
+                begun. Choose from our ATS-friendly, hand- <br />
+                crafted resume templates
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className=" bg-orange-600">sdfsd</div>
+        <div className=" overflow-hidden rounded-3xl">
+          <div className=' rounded-3xl w-[80%] h-full bg-lime-400'>
+
+          </div>
+        </div>
       </div>
     </div>
   );

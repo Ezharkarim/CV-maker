@@ -2,7 +2,9 @@ import React from 'react'
 
 const CvTemplates = () => {
   return (
-    <div>CvTemplates</div>
+    <div>
+        
+    </div>
   )
 }
 
