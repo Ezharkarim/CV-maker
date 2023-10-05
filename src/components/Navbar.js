@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     
   return (
     <>
-      <nav className=" bg-indigo-500 w-full h-14 flex items-center justify-between px-4">
-        <div className="flex">
+      <nav className=" bg-[#51E2C2] w-full h-14 flex items-center justify-between px-4">
+        <Link className="flex" to="/">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8 mr-3"
@@ -14,10 +15,10 @@ const Navbar = () => {
           <span className=" text-2xl font-semibold whitespace-nowrap text-white">
             CV Maker
           </span>
-        </div>
+        </Link>
         <ul className="lg:flex hidden text-white">
           <li className="mx-[10px] font-semibold cursor-pointer">
-            CV Templates
+            <Link to="/cvtemplates">CV Templates</Link>
           </li>
           <li className="mx-[10px] font-semibold cursor-pointer">
             Resume Templates
@@ -28,17 +29,17 @@ const Navbar = () => {
           <li className="mx-[10px] font-semibold cursor-pointer">EN</li>
         </ul>
         <div className="flex">
-          <div className="md:block hidden mt-1 ml-2">
-            <button className="bg-blue-800 p-[5px] rounded-lg text-white font-semibold mx-[5px]">
+          <div className="md:block hidden ml-2">
+            <button className="border-slate-50 border-2 p-[4px] px-4 rounded-3xl text-white font-semibold mx-[10px] transition ease-in-out delay-150 hover:-translate-x-1 hover:scale-110 duration-300">
               Register
             </button>
-            <button className="bg-blue-800 p-[5px] rounded-lg text-white font-semibold mx-[5px]">
+            <button className="border-slate-50 border-2 p-[4px] px-4 rounded-3xl text-white font-semibold mx-[5px] transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110 duration-300">
               Sign in
             </button>
           </div>
           <div className="block lg:hidden hover:rounded-xl">
             <svg
-              className="w-10 h-10 "
+              className="w-8 h-8 "
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
