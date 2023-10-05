@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link to="/cvtemplates">CV Templates</Link>
           </li>
           <li className="mx-[10px] font-semibold cursor-pointer">
-            Resume Templates
+            <Link to="/resumetemplate">Resume Templates</Link>
           </li>
           <li className="mx-[10px] font-semibold cursor-pointer">
             Career Blog
