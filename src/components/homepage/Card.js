@@ -2,22 +2,26 @@ import React from 'react'
 
 const Card = () => {
   return (
-    <div className="block max-w-screen-xl items-center  mx-auto w-[100%]">
-      <h1 className="mt-12 text-4xl font-mono text-gray-600 font-semibold">
+    <div className="block max-w-screen-xl items-center mt-40  mx-auto w-[100%]">
+      <h1 className="mt-12 text-2xl text-center lg:text-3xl lg:text-left font-mono text-gray-600 font-semibold">
         Our Users Are Being Hired at the <br />
         World's Leading Companies.
       </h1>
-
-      <div className="flex flex-wrap w-full h-96 bg-slate-400">
-        <div className="w-[50%] basic-1/2 bg-red-400 ">
-          <div className=" bg-slate-100  h-40 m-4">
-            <div className="rounded-xl float-right	w-40 h-40 bg-green-600">
-              <p className=" text-white">1</p>
+      <div className="grid grid-rows-1 md:grid-cols-2 gap-4">
+        <div className='grid grid-rows-2'>
+          <div className=" bg-slate-600 rounded-3xl justify-items-end">
+            <div className="w-[160px] h-[160px] float-right">
+              <p className="flex items-center justify-center bg-[#51E2C2] font-bold rounded-3xl text-white text-9xl h-full">
+                1
+              </p>
             </div>
           </div>
-          <div className=" bg-slate-400 w-full h-full"></div>
+          <div>
+            ezasdfsd
+          </div>
         </div>
-        <div className="w-[50%] basic-1/2 bg-slate-500">werwerewr</div>
+
+        <div className=" bg-orange-600">sdfsd</div>
       </div>
     </div>
   );

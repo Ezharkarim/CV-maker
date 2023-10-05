@@ -1,23 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     
   return (
     <>
       <nav className=" bg-indigo-500 w-full h-14 flex items-center justify-between px-4">
-        <div className="flex">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
-          <span className=" text-2xl font-semibold whitespace-nowrap text-white">
-            CV Maker
-          </span>
-        </div>
+          <Link className="flex" to="/">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              className="h-8 mr-3"
+              alt="Flowbite Logo"
+            />
+            <span className=" text-2xl font-semibold whitespace-nowrap text-white">
+              CV Maker
+            </span>
+          </Link> 
         <ul className="lg:flex hidden text-white">
           <li className="mx-[10px] font-semibold cursor-pointer">
-            CV Templates
+            <Link to="/cvtemplates">CV Templates</Link>
           </li>
           <li className="mx-[10px] font-semibold cursor-pointer">
             Resume Templates
@@ -28,7 +29,7 @@ const Navbar = () => {
           <li className="mx-[10px] font-semibold cursor-pointer">EN</li>
         </ul>
         <div className="flex">
-          <div className="md:block hidden mt-1 ml-2">
+          <div className="md:block hidden ml-2">
             <button className="bg-blue-800 p-[5px] rounded-lg text-white font-semibold mx-[5px]">
               Register
             </button>
@@ -38,7 +39,7 @@ const Navbar = () => {
           </div>
           <div className="block lg:hidden hover:rounded-xl">
             <svg
-              className="w-10 h-10 "
+              className="w-8 h-8 "
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
