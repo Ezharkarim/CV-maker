@@ -1,6 +1,7 @@
 import React from "react";
 
 const Top = () => {
+  
   return (
     <div>
       <div className="block max-w-screen-xl items-center  mx-auto w-[100%]">
@@ -17,10 +18,10 @@ const Top = () => {
             resume in as little as 5 <br />
             minutes.
           </h3>
-          <h4 className=" block text-center lg:text-start text-gray-600 font-bold text-2xl">
+          <h4 className=" mt-3 block text-center lg:text-start text-gray-600 font-bold text-2xl">
             Try it for free.
           </h4>
-          <button class=" ml-3 bg-blue-500 rounded-full hover:bg-blue-700 text-white font-bold py-2 px-4 border-none">
+          <button class="mt-3 bg-blue-500 rounded-full ml-3 lg:ml-0 hover:bg-blue-700 text-white font-bold py-2 px-4 border-none">
             Get Started Now
           </button>
         </div>

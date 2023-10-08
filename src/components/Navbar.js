@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Mobmenu from "./animation/Mobmenu";
 
 const Navbar = () => {
-    
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
+    <Mobmenu isOpen={isOpen} setIsOpen={setIsOpen}/>
       <nav className=" bg-[#51E2C2] w-full h-14 flex items-center justify-between px-4">
         <Link className="flex" to="/">
           <img
@@ -37,19 +40,25 @@ const Navbar = () => {
               Sign in
             </button>
           </div>
-          <div className="block lg:hidden hover:rounded-xl">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex lg:hidden items-center px-3 py-2 rounded text-white hover:text-black-400"
+          >
             <svg
-              className="w-8 h-8 "
+              className={`fill-current h-6 w-6 ${isOpen ? "hidden" : "block"}`}
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="100"
-              height="100"
-              viewBox="0 0 50 50"
             >
-              <path d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z"></path>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
-          </div>
+            <svg
+              className={`fill-current h-6 w-6 ${isOpen ? "block" : "hidden"}`}
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+            </svg>
+          </button>
         </div>
       </nav>
     </>
